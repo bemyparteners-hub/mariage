@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathilde & Arnaud — 4 Juillet 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Great+Vibes&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#accueil" class="nav-logo">M & A</a>
+      <button class="nav-toggle" aria-label="Menu" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#grand-jour">Grand Jour</a></li>
+        <li><a href="#histoire">Notre Histoire</a></li>
+        <li><a href="#temoins">Témoins</a></li>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#rsvp" class="nav-rsvp">RSVP</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════
+       SECTION 1 — HERO
+  ═══════════════════════════════════ -->
+  <section id="accueil" class="section-hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <!-- Floral decorations -->
+    <div class="floral-top-left" aria-hidden="true">
+      <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 290 Q80 180 150 120 Q220 60 290 10" stroke="#D4919A" stroke-width="1.2" opacity="0.5"/>
+        <circle cx="60" cy="220" r="18" fill="#F2C4C4" opacity="0.35"/>
+        <circle cx="60" cy="220" r="11" fill="#E8A4B0" opacity="0.45"/>
+        <circle cx="110" cy="165" r="14" fill="#F2C4C4" opacity="0.3"/>
+        <circle cx="160" cy="115" r="20" fill="#EFD0D5" opacity="0.38"/>
+        <circle cx="160" cy="115" r="12" fill="#E8A4B0" opacity="0.4"/>
+        <circle cx="215" cy="68" r="15" fill="#F2C4C4" opacity="0.3"/>
+        <!-- petals -->
+        <ellipse cx="60" cy="204" rx="6" ry="12" fill="#F5D7DC" opacity="0.5"/>
+        <ellipse cx="60" cy="236" rx="6" ry="12" fill="#F5D7DC" opacity="0.5"/>
+        <ellipse cx="44" cy="220" rx="12" ry="6" fill="#F5D7DC" opacity="0.5"/>
+        <ellipse cx="76" cy="220" rx="12" ry="6" fill="#F5D7DC" opacity="0.5"/>
+        <ellipse cx="49" cy="209" rx="7" ry="12" fill="#F5D7DC" opacity="0.4" transform="rotate(-45 49 209)"/>
+        <ellipse cx="71" cy="231" rx="7" ry="12" fill="#F5D7DC" opacity="0.4" transform="rotate(-45 71 231)"/>
+        <ellipse cx="71" cy="209" rx="7" ry="12" fill="#F5D7DC" opacity="0.4" transform="rotate(45 71 209)"/>
+        <ellipse cx="49" cy="231" rx="7" ry="12" fill="#F5D7DC" opacity="0.4" transform="rotate(45 49 231)"/>
+        <!-- leaves -->
+        <path d="M75 240 Q100 220 90 195" stroke="#7A9E7E" stroke-width="1" fill="none" opacity="0.5"/>
+        <path d="M120 190 Q145 170 135 145" stroke="#7A9E7E" stroke-width="1" fill="none" opacity="0.4"/>
+        <path d="M175 135 Q200 110 192 88" stroke="#7A9E7E" stroke-width="0.8" fill="none" opacity="0.4"/>
+        <!-- small flowers -->
+        <circle cx="135" cy="145" r="6" fill="#F9D5D5" opacity="0.4"/>
+        <circle cx="192" cy="88" r="5" fill="#F9D5D5" opacity="0.35"/>
+      </svg>
+    </div>
+    <div class="floral-bottom-right" aria-hidden="true">
+      <svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M290 10 Q220 120 150 180 Q80 240 10 290" stroke="#D4919A" stroke-width="1.2" opacity="0.5"/>
+        <circle cx="240" cy="80" r="18" fill="#F2C4C4" opacity="0.35"/>
+        <circle cx="240" cy="80" r="11" fill="#E8A4B0" opacity="0.45"/>
+        <circle cx="190" cy="135" r="14" fill="#F2C4C4" opacity="0.3"/>
+        <circle cx="140" cy="185" r="20" fill="#EFD0D5" opacity="0.38"/>
+        <circle cx="140" cy="185" r="12" fill="#E8A4B0" opacity="0.4"/>
+        <circle cx="85" cy="232" r="15" fill="#F2C4C4" opacity="0.3"/>
+        <path d="M225 95 Q200 115 210 140" stroke="#7A9E7E" stroke-width="1" fill="none" opacity="0.5"/>
+        <path d="M175 150 Q150 170 160 195" stroke="#7A9E7E" stroke-width="1" fill="none" opacity="0.4"/>
+        <circle cx="160" cy="195" r="5" fill="#F9D5D5" opacity="0.35"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-label animate-up delay-1">Bienvenue à notre mariage</p>
+      <h1 class="hero-names animate-up delay-2">Mathilde <span class="hero-ampersand">&</span> Arnaud</h1>
+      <div class="hero-divider animate-up delay-3">
+        <span class="divider-line"></span>
+        <span class="divider-diamond">◆</span>
+        <span class="divider-line"></span>
+      </div>
+      <p class="hero-date animate-up delay-3">Samedi 4 Juillet 2026</p>
+      <p class="hero-tagline animate-up delay-4">Nous vous invitons à partager avec nous le plus beau jour de notre vie.</p>
+      <div class="hero-buttons animate-up delay-5">
+        <a href="#rsvp" class="btn btn-primary">Confirmer ma présence</a>
+        <a href="#histoire" class="btn btn-secondary">Découvrir notre histoire</a>
+      </div>
+    </div>
+
+    <a href="#grand-jour" class="scroll-hint" aria-label="Défiler vers le bas">
+      <span class="scroll-arrow"></span>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SECTION 2 — NOTRE GRAND JOUR
+  ═══════════════════════════════════ -->
+  <section id="grand-jour" class="section-full">
+    <div class="section-floral-bg section-floral-bg--rose"></div>
+    <div class="container reveal">
+      <div class="section-header">
+        <p class="section-label">Le</p>
+        <h2 class="section-title">Grand Jour</h2>
+        <div class="title-ornament" aria-hidden="true">❧</div>
+      </div>
+
+      <div class="glass-card grand-jour-card">
+        <p class="grand-jour-intro">
+          Nous avons l'honneur de vous convier à célébrer notre mariage<br>
+          le <strong>samedi 4 juillet 2026</strong>.
+        </p>
+        <p class="grand-jour-text">
+          Ce jour, nous choisirons de nous unir entourés de ceux que nous aimons — vous qui avez été là dans nos vies, et qui ferez partie de cette nouvelle aventure que nous débutons ensemble. Votre présence à nos côtés est le plus beau cadeau que vous puissiez nous offrir.
+        </p>
+        <p class="grand-jour-text">
+          Votre invitation précise si vous êtes conviés à la cérémonie et au vin d'honneur, ou également au repas du soir. Nous vous remercions de bien vouloir nous confirmer votre présence.
+        </p>
+      </div>
+
+      <!-- Countdown -->
+      <div class="countdown-wrapper reveal-late">
+        <p class="countdown-label">Plus que...</p>
+        <div class="countdown" id="countdown">
+          <div class="countdown-item">
+            <span class="countdown-number" id="cd-days">--</span>
+            <span class="countdown-unit">jours</span>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="cd-hours">--</span>
+            <span class="countdown-unit">heures</span>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="cd-minutes">--</span>
+            <span class="countdown-unit">minutes</span>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-item">
+            <span class="countdown-number" id="cd-seconds">--</span>
+            <span class="countdown-unit">secondes</span>
+          </div>
+        </div>
+        <p class="countdown-sub">avant le 4 juillet 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SECTION 3 — NOTRE HISTOIRE
+  ═══════════════════════════════════ -->
+  <section id="histoire" class="section-full section-full--dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Depuis le début</p>
+        <h2 class="section-title">Notre Histoire</h2>
+        <div class="title-ornament" aria-hidden="true">❧</div>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item timeline-item--left reveal">
+          <div class="timeline-dot">
+            <span class="timeline-icon">✉</span>
+          </div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">2019</span>
+            <h3 class="timeline-title">Les premiers messages</h3>
+            <p class="timeline-text">
+              Tout commence par quelques mots échangés sur les réseaux sociaux. Des messages anodins, peut-être timides, mais porteurs de quelque chose d'indéfinissable. Deux inconnus qui s'écrivent, sans savoir encore que ces lignes changeront le cours de leur vie.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item--right reveal">
+          <div class="timeline-dot">
+            <span class="timeline-icon">✨</span>
+          </div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">11 Janvier 2020</span>
+            <h3 class="timeline-title">La rencontre</h3>
+            <p class="timeline-text">
+              Le 11 janvier 2020, dans la lumière d'une boîte de nuit, leurs regards se croisent. Ce qui avait commencé par des mots sur un écran devient soudain bien réel. Une rencontre, un sourire, une évidence. Cette nuit-là, tout commence vraiment.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item--left reveal">
+          <div class="timeline-dot">
+            <span class="timeline-icon">🏠</span>
+          </div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">Chavanoz</span>
+            <h3 class="timeline-title">Notre premier nid</h3>
+            <p class="timeline-text">
+              Les premiers mois passent comme un tourbillon de découvertes, de rires et de complicité grandissante. Bientôt, vivre séparément n'a plus de sens. Ils s'installent ensemble à Chavanoz, premier appartement partagé, premier foyer, premiers souvenirs dans leurs propres murs.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item--right reveal">
+          <div class="timeline-dot">
+            <span class="timeline-icon">🌿</span>
+          </div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">Corbas</span>
+            <h3 class="timeline-title">Le cocon à Corbas</h3>
+            <p class="timeline-text">
+              Leur histoire s'approfondit, leur complicité s'enracine. Direction Corbas, où ils créent leur cocon, façonnent leurs habitudes communes, inventent leurs petites traditions. La vie à deux, dans toute sa beauté quotidienne.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item--left reveal">
+          <div class="timeline-dot">
+            <span class="timeline-icon">🐾</span>
+          </div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">L'arrivée de Tonka</span>
+            <h3 class="timeline-title">Leur petite famille</h3>
+            <p class="timeline-text">
+              L'arrivée de Tonka marque une nouvelle étape : ils ne sont plus seulement un couple, ils sont une petite famille. Tonka, mascotte de leur amour, témoin discret de leur quotidien, complice inséparable de leurs aventures à trois.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item--right reveal">
+          <div class="timeline-dot">
+            <span class="timeline-icon">💍</span>
+          </div>
+          <div class="timeline-card glass-card timeline-card--gold">
+            <span class="timeline-year">9 Février 2024</span>
+            <h3 class="timeline-title">Le PACS</h3>
+            <p class="timeline-text">
+              Le 9 février 2024, Mathilde et Arnaud franchissent ensemble une belle étape : ils se pacsent. Une promesse officielle, un premier «&nbsp;oui&nbsp;» solennel qui scelle leur engagement et préfigure la grande fête à venir.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item timeline-item--left reveal">
+          <div class="timeline-dot">
+            <span class="timeline-icon">🗝</span>
+          </div>
+          <div class="timeline-card glass-card">
+            <span class="timeline-year">Avril 2024</span>
+            <h3 class="timeline-title">La maison à Villefontaine</h3>
+            <p class="timeline-text">
+              En avril 2024, ils deviennent propriétaires. Une maison à Villefontaine — leur maison. Des murs à remplir de vie, un jardin à apprivoiser, un espace à construire selon leur image. L'avenir prend forme, pierre après pierre.
+            </p>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SECTION — LA DEMANDE EN MARIAGE
+  ═══════════════════════════════════ -->
+  <section id="demande" class="section-full section-demande">
+    <div class="demande-bg"></div>
+    <div class="container reveal">
+      <div class="section-header">
+        <p class="section-label">Le moment magique</p>
+        <h2 class="section-title">La Demande</h2>
+        <div class="title-ornament" aria-hidden="true">❧</div>
+      </div>
+
+      <div class="demande-content">
+        <div class="demande-story">
+          <div class="demande-step reveal">
+            <div class="demande-step-icon">✉</div>
+            <div class="demande-step-text">
+              <h3>Les enveloppes</h3>
+              <p>Pour célébrer leurs cinq ans ensemble, Arnaud avait tout préparé dans le plus grand secret. Des enveloppes soigneusement glissées à Mathilde — chacune portant un indice, une promesse, un morceau de l'aventure qui l'attendait. Un mot mêlé dissimulait la destination : Aix-les-Bains.</p>
+            </div>
+          </div>
+          <div class="demande-step reveal">
+            <div class="demande-step-icon">🏨</div>
+            <div class="demande-step-text">
+              <h3>Un week-end d'exception</h3>
+              <p>Direction les rives du lac du Bourget. Un hôtel magnifique les accueille pour un week-end suspendu hors du temps. Le spa, les dîners, les balades au bord de l'eau — tout est réuni pour créer une bulle de bonheur à deux.</p>
+            </div>
+          </div>
+          <div class="demande-step reveal">
+            <div class="demande-step-icon">🍽</div>
+            <div class="demande-step-text">
+              <h3>Le dîner romantique</h3>
+              <p>Un restaurant élégant, des lumières douces, une soirée qui s'étire avec la douceur des grandes occasions. Mathilde ne se doute encore de rien, ou peut-être que oui — mais elle savoure chaque instant de ce moment précieux.</p>
+            </div>
+          </div>
+          <div class="demande-step reveal">
+            <div class="demande-step-icon">💍</div>
+            <div class="demande-step-text">
+              <h3>Le grand moment</h3>
+              <p>De retour dans leur chambre, au terme de cette journée parfaite, Arnaud prend la main de Mathilde. Et dans la douceur de cette nuit à Aix-les-Bains, cinq ans après leur première rencontre, il lui pose la question qui allait tout changer.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="demande-quote reveal-late">
+          <blockquote>
+            <p>«&nbsp;Et si on se disait oui&nbsp;pour la vie&nbsp;?&nbsp;»</p>
+          </blockquote>
+          <p class="demande-quote-sub">Elle a dit oui.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SECTION 4 — NOS ALLIÉS / TÉMOINS
+  ═══════════════════════════════════ -->
+  <section id="temoins" class="section-full">
+    <div class="section-floral-bg section-floral-bg--ivory"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Ils seront à nos côtés</p>
+        <h2 class="section-title">Nos Alliés</h2>
+        <div class="title-ornament" aria-hidden="true">❧</div>
+      </div>
+
+      <div class="temoins-subtitle reveal">
+        <p>Nos témoins : quatre personnes extraordinaires qui portent une part de notre histoire et nous accompagnent en ce jour unique.</p>
+      </div>
+
+      <div class="temoins-group reveal">
+        <h3 class="temoins-group-title">Témoins de la Mariée</h3>
+        <div class="temoins-grid">
+
+          <div class="temoin-card glass-card reveal">
+            <div class="temoin-initial">A</div>
+            <div class="temoin-info">
+              <h4 class="temoin-name">Alexane</h4>
+              <span class="temoin-role">Témoin de Mathilde</span>
+              <p class="temoin-text">
+                Alexane est bien plus qu'une amie — elle est une confidente, une complice de toujours. Elle a partagé les rires, les doutes, les victoires de Mathilde. Que ce soit dans les grandes étapes comme dans les petits moments du quotidien, elle a toujours été là, fidèle et lumineuse. Avoir Alexane à ses côtés ce jour-là, c'est la certitude d'être entourée d'un amour sincère.
+              </p>
+              <a href="tel:" class="temoin-contact" aria-label="Appeler Alexane">📞 Contact</a>
+            </div>
+          </div>
+
+          <div class="temoin-card glass-card reveal">
+            <div class="temoin-initial">V</div>
+            <div class="temoin-info">
+              <h4 class="temoin-name">Valérie</h4>
+              <span class="temoin-role">Témoin de Mathilde</span>
+              <p class="temoin-text">
+                Valérie, c'est la douceur et la force réunies. Avec elle, chaque épreuve devient surmontable, chaque joie prend une saveur particulière. Son amitié précieuse et indéfectible est l'une des plus belles choses que Mathilde ait dans sa vie. Avoir Valérie à ses côtés le 4 juillet, c'est une évidence qui ne pouvait être autrement.
+              </p>
+              <a href="tel:" class="temoin-contact" aria-label="Appeler Valérie">📞 Contact</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="temoins-group reveal">
+        <h3 class="temoins-group-title">Témoins du Marié</h3>
+        <div class="temoins-grid">
+
+          <div class="temoin-card glass-card reveal">
+            <div class="temoin-initial">A</div>
+            <div class="temoin-info">
+              <h4 class="temoin-name">Antoine</h4>
+              <span class="temoin-role">Témoin d'Arnaud</span>
+              <p class="temoin-text">
+                Antoine est l'un de ces amis rares, ceux que l'on sait présents quoi qu'il arrive. Frère de cœur, confident et complice, il est une figure essentielle dans la vie d'Arnaud. Son humour, sa loyauté et sa présence bienveillante font de lui le témoin idéal pour ce jour qui restera gravé dans leurs mémoires.
+              </p>
+              <a href="tel:" class="temoin-contact" aria-label="Appeler Antoine">📞 Contact</a>
+            </div>
+          </div>
+
+          <div class="temoin-card glass-card reveal">
+            <div class="temoin-initial">J</div>
+            <div class="temoin-info">
+              <h4 class="temoin-name">Justine</h4>
+              <span class="temoin-role">Témoin d'Arnaud</span>
+              <p class="temoin-text">
+                Justine, c'est la bonne humeur incarnée et une amitié qui traverse les années sans jamais s'effacer. Elle connaît Arnaud dans sa vérité, dans ses qualités comme dans ses petits travers. L'avoir à ses côtés ce 4 juillet, c'est la certitude d'être entouré de quelqu'un qui le connaît et l'aime pour ce qu'il est vraiment.
+              </p>
+              <a href="tel:" class="temoin-contact" aria-label="Appeler Justine">📞 Contact</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SECTION 5 — PHOTOS
+  ═══════════════════════════════════ -->
+  <section id="photos" class="section-full section-full--dark">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">Immortaliser le moment</p>
+        <h2 class="section-title">Les Photos</h2>
+        <div class="title-ornament" aria-hidden="true">❧</div>
+      </div>
+
+      <div class="photos-grid reveal">
+        <div class="photo-card glass-card photo-card--large">
+          <div class="photo-icon">📷</div>
+          <h3>Photographe & Vidéaste</h3>
+          <p>Un photographe et un vidéaste professionnels seront présents tout au long du grand jour pour immortaliser chaque instant précieux, des préparatifs jusqu'à la dernière danse.</p>
+        </div>
+        <div class="photo-card glass-card">
+          <div class="photo-icon">⛪</div>
+          <h3>À l'église</h3>
+          <p>Par respect pour l'esthétique des photos officielles et la solennité du moment, nous vous demandons de <strong>ranger téléphones et appareils photo</strong> pendant la cérémonie religieuse. Laissez vos yeux capturer ce moment.</p>
+        </div>
+        <div class="photo-card glass-card">
+          <div class="photo-icon">🥂</div>
+          <h3>Mairie, vin d'honneur & soirée</h3>
+          <p>En dehors de la cérémonie religieuse, vous êtes libres de photographier et filmer autant que vous le souhaitez ! Vos souvenirs nous sont précieux.</p>
+        </div>
+        <div class="photo-card glass-card photo-card--cta">
+          <div class="photo-icon">🖼</div>
+          <h3>Galerie en ligne</h3>
+          <p>Après le mariage, une galerie en ligne sera disponible pour retrouver toutes les photos officielles et partager les vôtres avec nous.</p>
+          <div class="gallery-placeholder">
+            <span>Lien vers la galerie disponible après le mariage</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo mood board placeholder -->
+      <div class="mood-board reveal-late">
+        <div class="mood-frame">
+          <span class="mood-text">Notre galerie photo sera disponible ici après le 4 juillet 2026</span>
+          <div class="mood-decoration" aria-hidden="true">✿ ✿ ✿</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SECTION 6 — RSVP
+  ═══════════════════════════════════ -->
+  <section id="rsvp" class="section-full section-rsvp">
+    <div class="rsvp-bg"></div>
+    <div class="container reveal">
+      <div class="section-header">
+        <p class="section-label">Votre réponse</p>
+        <h2 class="section-title section-title--light">Dites-nous Oui !</h2>
+        <div class="title-ornament title-ornament--light" aria-hidden="true">❧</div>
+      </div>
+
+      <div class="rsvp-intro reveal">
+        <p>Le grand jour approche et nous avons hâte de le vivre entourés de nos proches. Pour nous aider à préparer cette journée dans les meilleures conditions, merci de nous confirmer votre présence avant le <strong>1er mai 2026</strong>.</p>
+        <p class="rsvp-notice">Nous vous rappelons que seules les personnes figurant sur l'enveloppe de votre invitation sont conviées. Votre invitation précise également si vous êtes attendus uniquement à la cérémonie et au vin d'honneur, ou également au repas du soir.</p>
+      </div>
+
+      <div class="rsvp-form-wrapper reveal-late">
+        <!-- Steps indicator -->
+        <div class="form-steps" id="formSteps">
+          <div class="form-step form-step--active" data-step="1">
+            <span class="step-number">1</span>
+            <span class="step-label">Vous</span>
+          </div>
+          <div class="step-connector"></div>
+          <div class="form-step" data-step="2">
+            <span class="step-number">2</span>
+            <span class="step-label">Présence</span>
+          </div>
+          <div class="step-connector"></div>
+          <div class="form-step" data-step="3">
+            <span class="step-number">3</span>
+            <span class="step-label">Message</span>
+          </div>
+        </div>
+
+        <form id="rsvpForm" class="rsvp-form glass-card" action="https://formspree.io/f/VOTRE_ID" method="POST" novalidate>
+
+          <!-- Step 1: Identity -->
+          <div class="form-page form-page--active" id="page1">
+            <h3 class="form-page-title">Dites-nous qui vous êtes</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="prenom">Prénom <span class="required">*</span></label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+              </div>
+              <div class="form-group">
+                <label for="nom">Nom <span class="required">*</span></label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="telephone">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="06 XX XX XX XX">
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="button" class="btn btn-primary btn-form-next" data-next="2">Suivant →</button>
+            </div>
+          </div>
+
+          <!-- Step 2: Attendance -->
+          <div class="form-page" id="page2">
+            <h3 class="form-page-title">Serez-vous avec nous ?</h3>
+            <div class="form-group">
+              <label>Présence au mariage <span class="required">*</span></label>
+              <div class="radio-group">
+                <label class="radio-card">
+                  <input type="radio" name="presence" value="oui" required>
+                  <span class="radio-content">
+                    <span class="radio-icon">🎉</span>
+                    <span class="radio-text">Oui, avec grand plaisir !</span>
+                  </span>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="presence" value="non">
+                  <span class="radio-content">
+                    <span class="radio-icon">😔</span>
+                    <span class="radio-text">Je ne pourrai malheureusement pas</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="form-group presence-details" id="presenceDetails">
+              <label for="nbPersonnes">Nombre de personnes (vous inclus) <span class="required">*</span></label>
+              <input type="number" id="nbPersonnes" name="nb_personnes" min="1" max="10" placeholder="1">
+            </div>
+            <div class="form-group presence-details" id="allergiesGroup">
+              <label for="allergies">Allergies ou régimes alimentaires</label>
+              <textarea id="allergies" name="allergies" rows="3" placeholder="Végétarien, sans gluten, allergie aux fruits à coque…"></textarea>
+            </div>
+            <div class="form-actions form-actions--split">
+              <button type="button" class="btn btn-outline btn-form-prev" data-prev="1">← Retour</button>
+              <button type="button" class="btn btn-primary btn-form-next" data-next="3">Suivant →</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Message -->
+          <div class="form-page" id="page3">
+            <h3 class="form-page-title">Un mot pour nous ?</h3>
+            <div class="form-group">
+              <label for="message">Votre message aux mariés (optionnel)</label>
+              <textarea id="message" name="message" rows="5" placeholder="Partagez avec nous un souhait, une anecdote, un mot du cœur…"></textarea>
+            </div>
+            <div class="form-actions form-actions--split">
+              <button type="button" class="btn btn-outline btn-form-prev" data-prev="2">← Retour</button>
+              <button type="submit" class="btn btn-primary btn-submit">Envoyer ma réponse ✓</button>
+            </div>
+          </div>
+
+          <!-- Success state -->
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">💌</div>
+            <h3>Merci infiniment !</h3>
+            <p>Votre réponse a bien été enregistrée. Nous avons hâte de partager cette journée unique avec vous.</p>
+            <p class="success-sub">— Mathilde & Arnaud</p>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SECTION 7 — CONTACT
+  ═══════════════════════════════════ -->
+  <section id="contact" class="section-full section-contact">
+    <div class="container reveal">
+      <div class="section-header">
+        <p class="section-label">Besoin de nous ?</p>
+        <h2 class="section-title">Nous Contacter</h2>
+        <div class="title-ornament" aria-hidden="true">❧</div>
+      </div>
+
+      <div class="contact-content reveal">
+        <p class="contact-intro">Une question ? Une hésitation ? N'hésitez pas à nous écrire ou à contacter directement nos témoins, ils seront ravis de vous répondre.</p>
+
+        <div class="contact-cards">
+          <div class="contact-card glass-card">
+            <div class="contact-card-icon">💌</div>
+            <h3>Mathilde & Arnaud</h3>
+            <p class="contact-role">Les mariés</p>
+            <div class="contact-buttons">
+              <a href="mailto:bemyparteners@gmail.com" class="btn btn-contact">
+                <span>📧</span> Nous écrire
+              </a>
+              <a href="tel:" class="btn btn-contact btn-contact--phone">
+                <span>📞</span> Nous appeler
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-card glass-card">
+            <div class="contact-card-icon">🤝</div>
+            <h3>Nos témoins</h3>
+            <p class="contact-role">Alexane · Valérie · Antoine · Justine</p>
+            <p class="contact-note">Vos interlocuteurs privilégiés pour toute question sur l'organisation de la journée.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-closing reveal-late">
+        <div class="closing-ornament" aria-hidden="true">✦ ✦ ✦</div>
+        <p class="closing-quote">Nous avons déjà hâte de passer ce grand jour à vos côtés.</p>
+        <p class="closing-names">— Mathilde & Arnaud —</p>
+        <p class="closing-date">4 Juillet 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-names">Mathilde <span>&amp;</span> Arnaud</p>
+      <p class="footer-date">4 Juillet 2026</p>
+      <p class="footer-copy">Fait avec amour ♥</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
